@@ -1,0 +1,92 @@
+.header{
+  padding: 20px 0;
+  width: 100%;
+  background: $black;
+  border-bottom: 2px solid #FFCA19;
+  &__photo{
+    display: block;
+    border: 2px solid #FFCA19;
+    filter: drop-shadow(0px 0px 20px rgba(255, 208, 8, 0.2));
+    border-radius: 6px;
+  }
+  &__itemContent{
+    margin-left: 30px;
+  }
+  &__itemBal{
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__itemNumber{
+    display: flex;
+    align-items: center;
+  }
+  &__add{
+    background: transparent;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: 12px;
+  }
+  &__addIcon{
+    display: block;
+    path{
+      transition: 0.3s;
+    }
+    &:hover{
+      path{
+        fill: $orangeHover;
+      }
+    }
+  }
+}
+.header__list{
+  @include flex;
+  margin-left: -80px;
+  justify-content: center;
+}
+.header__item{
+  margin-left: 80px;
+  &_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &_ml{
+    margin-left: 50px;
+  }
+}
+.header__link{
+  transition: 0.3s;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  &:hover{
+    color: $orange;
+    .header__icon{
+      path{
+        fill: $orange;
+      }
+    }
+  } 
+  &.active{
+    color: $orange;
+    .header__icon{
+      path{
+        fill: $orange;
+      }
+    }
+  }
+
+}
+.header__icon{
+  width: 14px;
+  height: auto;
+  display: block;
+  margin-right: 4px;
+  path{
+    transition: 0.3s;
+    fill: #fff;
+  }
+}

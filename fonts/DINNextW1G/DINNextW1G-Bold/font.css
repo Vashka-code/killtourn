@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'DINNextW1G-Bold';
+  src: url('DINNextW1G-Bold.woff') format('woff'),
+       url('DINNextW1G-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

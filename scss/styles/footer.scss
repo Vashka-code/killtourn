@@ -1,0 +1,89 @@
+.footer{
+  background: #181818;
+  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.15);
+  padding: 50px 0 20px;
+  position: relative;
+}
+.footer__contents{
+  @include flex;
+  align-items: flex-start;
+}
+.footer__column_title{
+  width: 370px;
+}
+.footer__column_pay{
+  margin-left: 234px;
+}
+.footer__column_logos{
+  width: 144px;
+  margin-left: auto;
+}
+.footer__column{
+  font-weight: bold;
+}
+.footer__about{
+  font-weight: normal;
+  display: block;
+  margin-top: 20px;
+  .orange{
+    font-weight: bold;
+  }
+}
+.footer__about2{
+  display: block;
+  margin-top: 9px;
+  font-weight: normal;
+}
+.footer__column_payList{
+  @include flex;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+.footer__column_payItem{
+  margin-left: 30px;
+}
+.footer__column_logosLink{
+  display: block;
+  margin-top: 55px;
+  &:first-child{
+    margin-top: 0;
+  }
+}
+.footer__sohialsText{
+  font-weight: 400;
+}
+.footer__sohialsList{
+  @include flex;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+.footer__sohialsItem{
+  margin-left: 20px;
+}
+.footer__sohialsIcon{
+  path{
+    transition: 0.3s;
+  }
+}
+.footer__sohialsLink{
+  &:hover{
+    .footer__sohialsIcon{
+      path{
+        fill: $orange;
+      }
+    }
+  }
+}
+.footer__reklams{
+  margin-left: 442px;
+  font-weight: 400;
+  text-align: center;
+  .orange{
+    display: block;
+  }
+}
+.footer__icons{
+  position: absolute;
+  left: 13px;
+  top: -140px;
+}

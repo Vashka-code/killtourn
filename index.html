@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <title>Template</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- /Fonts -->
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+  <!-- /Fancybox -->
+
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- /Normalize -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- /Styles -->
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+    <div class="header__menu wrapper">
+      <a href="#" class="logo logo_mob">
+        <img src="./img/logo.svg" alt="" class="logo__icon">
+      </a>
+      <div class="menuBtn">
+        <span></span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list null">
+          <li class="header__item">
+            <a href="#tournaments" class="anchor header__link text_14"> 
+              <img src="img/bullseye-solid.svg" alt="" class="svg header__icon">
+              турниры
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#rulePopup" class="fancybox header__link text_14">
+              <img src="img/book-solid.svg" alt="" class="svg header__icon">
+              правила
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#topTablet" class="anchor header__link text_14">
+              <img src="img/trophy-solid.svg" alt="" class="svg header__icon">
+              лидерборд
+            </a>
+          </li>
+          <li class="header__item header__item_logo">
+            <a href="#" class="logo">
+              <img src="img/logo.svg" alt="" class="logo__img">
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#streams" class="anchor header__link text_14">
+              <img src="img/video-solid.svg" alt="" class="svg header__icon">
+              стримы
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#telegramBot" class="fancybox header__link text_14">
+              <img src="img/telegram-plane-brands.svg" alt="" class="svg header__icon">
+              телеграм бот
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#login" class="fancybox header__link text_14">
+              <img src="img/sign.svg" alt="" class="svg header__icon">
+              вход
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+	<!-- /Header -->
+
+
+	<!-- Main -->
+	<main class="main">
+    <section class="pubgMoney">
+      <div class="wrapper">
+        <div class="pubgMoney__logo">
+          <img src="img/PUBG_logo.png" alt="" class="pubgMoney__logoImg">
+        </div>
+        <h2 class="null pubgMoney__title h1">Получай 
+          <span class="orange">₽еальные деньги</span> 
+          за свой турнирный скилл
+        </h2>
+        <div class="pubgMoney__btns">
+          <a href="#tournaments" class="anchor pubgMoney__btn button">перейти к турнирам</a>
+          <a href="#videoInstructions" class="anchor pubgMoney__btn button">как принять участие?</a>
+          <div class="pubgMoney__money">
+            <img src="img/svgMoney.svg" alt="" class="pubgMoney__btnsmoneySvg svg">
+          </div>
+        </div>
+        <ul class="pubgMoney__list null">
+          <li class="pubgMoney__item">
+            <span class="text_24 orange pubgMoney__titles">300</span>
+            <span class="text_18 pubgMoney__itemText">Турниров проведено</span>
+          </li>
+          <li class="pubgMoney__item">
+            <span class="text_24 orange pubgMoney__titles">999999</span>
+            <span class="text_18 pubgMoney__itemText">пользователей</span>
+          </li>
+          <li class="pubgMoney__item">
+            <span class="text_24 orange pubgMoney__titles">1000000₽</span>
+            <span class="text_18 pubgMoney__itemText">выплачено участникам</span>
+          </li>
+        </ul>
+      </div>
+      <a href="#tournaments" class="anchor pubgMoney__down">
+        <img src="img/down.svg" alt="" class="svg pubgMoney__downIcon">
+      </a>
+    </section>
+    <section class="tournaments" id="tournaments">
+      <div class="tournaments__content">
+        <h2 class="h2 tournaments__title null">список турниров</h2>
+        <ul class="tournaments__list null">
+          <li class="tournaments__item" style="background-image: url('img/soloBg.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">solo</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+          <li class="tournaments__item" style="background-image: url('img/duoBg.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">DUO</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+          <li class="tournaments__item" style="background-image: url('img/squad.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">squad</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+          <li class="tournaments__item" style="background-image: url('img/soloBg.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">solo</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+          <li class="tournaments__item" style="background-image: url('img/duoBg.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">DUO</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+          <li class="tournaments__item" style="background-image: url('img/squad.png');">
+            <a href="#newAcc" class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">squad</span>
+                  <span class="text_18 tournaments__left"> осталось <span class="orange bold"> 6 мест</span></span>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">цена за килл</span>
+                    <span class="tournaments__value orange text_18">50 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__prizes null">
+                  <li class="tournaments__prize">
+                    <img src="./img/top1.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">300 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top2.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">200 руб.</span>
+                  </li>
+                  <li class="tournaments__prize">
+                    <img src="./img/top3.svg" alt="" class="tournaments__prizeIcon">
+                    <span class="tournaments__prizeText text_18">100 руб.</span>
+                  </li>
+                </ul>
+                <ul class="tournaments__infs null">
+                  <li class="tournaments__inf">
+                    <img src="./img/calendarIcon.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">21.07.2020</span>
+                  </li>
+                  <li class="tournaments__inf">
+                    <img src="./img/clock.svg" alt="" class="tournaments__infIcon">
+                    <span class="text_18 bold tournaments__infText">20:30</span>
+                  </li>
+                </ul>
+                <div class="button tournaments__button">купить за 100 ₽</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- <ul class="tournaments__list null">
+          <li class="tournaments__item tournaments__item_full" style="background-image: url('img/soloBg2.png')">
+            <div class="fancybox tournaments__link" >
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">
+                    <img src="./img/user-solid.svg" alt="" class="tournaments__icon"> 
+                    SOLO турнир
+                  </span>
+                  <a href="#" class="tournaments__links">
+                    как учавствовать?
+                  </a>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">дата проведения</span>
+                    <span class="tournaments__value orange text_18">20.07.2020 <span class="block ml_20"> 20:30</span></span>
+                  </li>
+                </ul>
+                <div class="tournaments__places text_36">
+                  осталось <span class="orange"> 6 мест</span>
+                </div>
+                <a href="#newAcc" class="button tournaments__button">купить за 100 ₽</a>
+              </div>
+            </div>
+          </li>
+          <li class="tournaments__item tournaments__item_full" style="background-image: url('img/duoBg2.png')">
+            <div class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">
+                    <img src="./img/user-friends-solid.svg" alt="" class="tournaments__icon"> 
+                    DUO турнир
+                  </span>
+                  <a href="#" class="tournaments__links">
+                    как учавствовать?
+                  </a>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">дата проведения</span>
+                    <span class="tournaments__value orange text_18">20.07.2020 <span class="block ml_20"> 20:30</span></span>
+                  </li>
+                </ul>
+                <div class="tournaments__places text_36">
+                  осталось <span class="orange"> 6 мест</span>
+                </div>
+                <a href="#newAcc" class="button tournaments__button">купить за 200 ₽</a>
+              </div>
+            </div>
+          </li>
+          <li class="tournaments__item tournaments__item_full" style="background-image: url('img/squad2.png')">
+            <div class="fancybox tournaments__link">
+              <div class="tournaments__itemContent">
+                <div class="tournaments__titleBlock">
+                  <span class="tournaments__titles">
+                    <img src="./img/users-solid.svg" alt="" class="tournaments__icon"> 
+                    squad турнир
+                  </span>
+                  <a href="#" class="tournaments__links">
+                    как учавствовать?
+                  </a>
+                </div>
+                <ul class="tournaments__list2 null">
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">карта</span>
+                    <span class="tournaments__value orange text_18">Аркадный режим</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">Лицо</span>
+                    <span class="tournaments__value orange text_18">от первого лица</span>
+                  </li>
+                  <li class="tournaments__item2">
+                    <span class="tournaments__type text_18">дата проведения</span>
+                    <span class="tournaments__value orange text_18">20.07.2020 <span class="block ml_20"> 20:30</span></span>
+                  </li>
+                </ul>
+                <div class="tournaments__places text_36">
+                  осталось <span class="orange"> 6 мест</span>
+                </div>
+                <a  href="#newAcc" class="button tournaments__button">купить за 400 ₽</a>
+              </div>
+            </div>
+          </li>
+        </ul> -->
+      </div>
+    </section>
+    <section class="tournamentsProPlayers">
+      <div class="wrapper">
+        <h2 class="null tournamentsProPlayers__title h1">Турниры для проигроков и нубов каждый день</h2>
+        <span class="tournamentsProPlayers__about text_16">У каждого есть шанс на победу, найди свою фишку и побеждай!</span>  
+        <ul class="tournamentsProPlayers__list null">
+          <li class="tournamentsProPlayers__item">
+            <img src="img/expand.svg" alt="" class="tournamentsProPlayers__icon svg">
+            <span class="text_18 tournamentsProPlayers__text">Разнообразные форматы</span>
+          </li>
+          <li class="tournamentsProPlayers__item">
+            <img src="img/calendar.svg" alt="" class="tournamentsProPlayers__icon svg">
+            <span class="text_18 tournamentsProPlayers__text">Разнообразные форматы</span>
+          </li>
+          <li class="tournamentsProPlayers__item">
+            <img src="img/wallet.png" alt="" class="tournamentsProPlayers__icon">
+            <span class="text_18 tournamentsProPlayers__text">Разнообразные форматы</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="videoInstructions" id="videoInstructions">
+      <div class="wrapperBig">
+        <h2 class="null videoInstructions__title h1">видео инструкции</h2>
+        <span class="videoInstructions__about text_16">подробная информация как пользоватся нашей платформой</span>  
+        <ul class="videoInstructions__list null">
+          <li class="videoInstructions__item">
+            <a href="https://www.youtube.com/watch?v=bTiAfLbmsnY" class="fancybox videoInstructions__link">
+              <img src="img/videoInstructions.png" alt="" class="videoInstructions__img">
+              <div class="videoInstructions__itemContent">
+                <img src="img/play.svg" alt="" class="svg videoInstructions__icon">
+                <span class="videoInstructions__text text_24">Как начать играть?</span>
+              </div>
+            </a>
+          </li>
+          <li class="videoInstructions__item">
+            <a href="https://www.youtube.com/watch?v=bTiAfLbmsnY" class="fancybox videoInstructions__link">
+              <img src="img/videoInstructions2.png" alt="" class="videoInstructions__img">
+              <div class="videoInstructions__itemContent">
+                <img src="img/visa.svg" alt="" class="svg videoInstructions__icon">
+                <span class="videoInstructions__text text_24">как купить?</span>
+              </div>
+            </a>
+          </li>
+          <li class="videoInstructions__item">
+            <a href="https://www.youtube.com/watch?v=bTiAfLbmsnY" class="fancybox videoInstructions__link">
+              <img src="img/videoInstructions3.png" alt="" class="videoInstructions__img">
+              <div class="videoInstructions__itemContent">
+                <img src="img/coins.svg" alt="" class="svg videoInstructions__icon">
+                <span class="videoInstructions__text text_24">Как получить деньги?</span>
+              </div>
+            </a>
+            <img src="img/Objects.svg" alt="" class="videoInstructions__icons svg">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="topTablet" id="topTablet">
+      <div class="wrapperBig topTablet__content">
+        <div class="topPlayer">
+          <h2 class="null h2 topPlayer__title">Топ игроков</h2>
+          <ul class="null topPlayer__list">
+            <li class="topPlayer__item topPlayer__item_yellow">
+              <div class="topPlayer__circle">
+                <img src="img/Subtract.svg" alt="" class="svg topPlayer__circleIcon">
+                <img src="img/photo.png" alt="" class="topPlayer__photo">
+                <div class="topPlayer__number">
+                  #1
+                </div>
+              </div>
+              <div class="topPlayer__infs">
+                <span class="topPlayer__name">VOLODYA</span>
+                <span class="topPlayer__type">заработал </span>
+                <span class="topPlayer__value">999999 ₽</span>
+              </div>
+            </li>
+            <li class="topPlayer__item topPlayer__item_grey">
+              <div class="topPlayer__circle">
+                <img src="img/Subtract.svg" alt="" class="svg topPlayer__circleIcon">
+                <img src="img/photo2.png" alt="" class="topPlayer__photo">
+                <div class="topPlayer__number">
+                  #2
+                </div>
+              </div>
+              <div class="topPlayer__infs">
+                <span class="topPlayer__name">SHROUD</span>
+                <span class="topPlayer__type">заработал </span>
+                <span class="topPlayer__value">4000 ₽</span>
+              </div>
+            </li>
+            <li class="topPlayer__item topPlayer__item_orange">
+              <div class="topPlayer__circle">
+                <img src="img/Subtract.svg" alt="" class="svg topPlayer__circleIcon">
+                <img src="img/photo3.png" alt="" class="topPlayer__photo">
+                <div class="topPlayer__number">
+                  #3
+                </div>
+              </div>
+              <div class="topPlayer__infs">
+                <span class="topPlayer__name">noname</span>
+                <span class="topPlayer__type">заработал </span>
+                <span class="topPlayer__value">1000 ₽</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="leaderboard">
+          <h2 class="h2 null leaderboard__title">таблица лидеров</h2>
+          <div class="leaderboard__tablet">
+            <ul class="leaderboard__list null">
+              <li class="leaderboard__item leaderboard__item_title">
+                <span class="leaderboard__number">#</span>
+                <span class="leaderboard__name">Игрок</span>
+                <span class="leaderboard__kils">Киллы</span>
+                <span class="leaderboard__matchs">Матчи</span>
+                <span class="leaderboard__cd">КД</span>
+                <span class="leaderboard__value">Заработок</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">4</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">5</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">6</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">7</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">8</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">9</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+              <li class="leaderboard__item">
+                <span class="leaderboard__number">10</span>
+                <span class="leaderboard__name orange">RichiPogChamp</span>
+                <span class="leaderboard__kils bold">100</span>
+                <span class="leaderboard__matchs bold">3</span>
+                <span class="leaderboard__cd bold">2.0</span>
+                <span class="leaderboard__value orange bold">4000 ₽</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="streams" id="streams">
+      <div class="wrapperBig">
+        <h2 class="h2 null streams__title">стримы</h2>
+        <span class="streams__about">прямые трансляции наших турниров</span>
+        <ul class="streams__list null">
+          <li class="streams__item">
+            <a href="https://www.youtube.com/watch?v=bTiAfLbmsnY" class="streams__link fancybox">
+              <img src="img/twitter_banner.png" alt="" class="streams__img">
+              <div class="streams__play">
+                <img src="img/play2.svg" alt="" class="svg streams__playIcon">
+              </div>
+            </a>
+          </li>
+          <li class="streams__item">
+            <a href="https://www.youtube.com/watch?v=bTiAfLbmsnY" class="streams__link fancybox">
+              <img src="img/twitter_banner.png" alt="" class="streams__img">
+              <div class="streams__play">
+                <img src="img/play2.svg" alt="" class="svg streams__playIcon">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+	</main>
+	<!-- /Main -->
+
+  <!-- Popups -->
+  <div class="rulePopup" id="rulePopup">
+    <h2 class="h2 null rulePopup__title">правила</h2>
+    <span class="rulePopup__about">Участвовать могут только зарегистрированные пользователи (указывать исключительно верные данные, чтобы мы могли добавить вас в игровое лобби).</span>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">1.</span> Выбрать турнир. Рядом с турниром будет указана цена за 1 килл. Цена зависит от вашего ранга и рассчитывается из суммы участия в турнире. Например, ваш ранг Legend, согласно данному рангу цена за 1 килл равна 75% от суммы участия в турнире. То есть, если сумма участия равна 100 рублей, то вы получаете 75 рублей с одного килла и уже с двух киллов окупаете стоимость участия на 50 рублей. С каждым новым киллом ваш заработок растет;
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">2.</span> Оплатить участие любым из доступных способов пополнения;
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">3. </span> Выбрать, вы будете участвовать в одиночку или со своими друзьями (смотрите на режим турнира, там будет указано возможное количество людей в одной команде);
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">4. </span> За 60 и за 30 минут до начала турнира в Телеграм бот вам придет уведомление с напоминанием о турнире. За 10 минут до начала в Телеграм бот вам придут логин и пароль от лобби, а также номер команды, в которую вам необходимо будет вступить, аналогичные данные для входа появятся в окне самого турнира на сайте. Входить в лобби настоятельно рекомендуем сразу, как только вы получили соответствующие данные, но ни в коем случае не за 1-2 минуты до начала турнира.
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">5. </span> Если в вашей ячейке находится посторонний игрок, сообщите нам об этом в поддержку
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">6. </span> После окончания турнира в течение 15 минут в Телеграм бот вам придут результаты турнира, и в случае совершения киллов на ваш баланс будут начислены заработанные денежные средства.
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">7. </span> Настоятельно рекомендуем ознакомиться с нашим FAQ в котором вы сможете найти ответы на самые частые вопросы.
+    </p>
+    <h2 class="h2 null rulePopup__title2">Запрещено</h2>
+    <ul class="rulePopup__list null">
+      <li class="rulePopup__item text_16_22">- Участие в турнирах с эмуляторов;</li>
+      <li class="rulePopup__item text_16_22">- Вставать не в свою ячейку в лобби (режимы Дуо и Сквад);</li>
+      <li class="rulePopup__item text_16_22">- Отправлять логин и пароль для входа в лобби третьим лицам;</li>
+      <li class="rulePopup__item text_16_22">- Участие в турнире с аккаунта, на котором уровень ниже 30;</li>
+      <li class="rulePopup__item text_16_22">- Использовать чит-коды;</li>
+      <li class="rulePopup__item text_16_22">- Тиминг в турнирах (игроки из разных команд играют вместе или умышленно не сражаются друг с другом, в случае сигнала от одного из игроков)</li>
+      <li class="rulePopup__item text_16_22">- Продавать и покупать игровые аккаунты, которые участвуют в турнирах KILLTOURN</li>
+    </ul>
+    <span class="rulePopup__about">Каждое из нарушений влечет за собой удаление из Турнира! В некоторых случаях возможен бан аккаунта без возврата денежных средств</span>
+    <button class="button rulePopup__btn">принимаю</button>
+  </div>
+  <div class="registrationPopup registrationPopup_middle" id="login" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">Добро пожаловать</h2>
+    <p class="registrationPopup__text text_16_grey null mt_30">
+      Нажимая кнопку, вы соглашаетесь с 
+      <a href="#" class="text_16_grey"> Условиями использования </a> и 
+      <a href="#" class="text_16_grey"> Политикой конфиденциальности </a>
+      и подтверждаете, что вам есть 18 лет.
+    </p>
+    <ul class="registrationPopup__list null">
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_blue">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/vk2.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через VK</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_purple">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/discord.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Discord</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_white">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/google.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Google</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_lightBlue">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/facebook.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Facebook</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_black">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/apple.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти с Apple</span>
+        </button>
+      </li>
+    </ul>
+    
+  </div>
+  <div class="registrationPopup registrationPopup_middle" id="newAcc" style="background-image: url('./img/signPopup.png');">
+    <p class="registrationPopup__text text_22 null">Для участия в турнирах войдите в свой аккаунт или создайте новый </p>
+    <button class="button button_white registrationPopup__plug button_big mt_50">Я новый игрок</button>
+    <button class="button button_white registrationPopup__plug button_big mt_30">У меня уже есть аккаунт</button>
+    
+  </div>
+  <div class="registrationPopup" id="telegramBot" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">телеграм бот</h2>
+    <p class="registrationPopup__text text_16_26 null mt_50">Для того, что-бы использовать сервис, вовремя получать все уведомления о начале турниров, самые жаркие новости и данные для входа в игровую лобби, перейдите по <a href="#" class="orange"> ссылке </a>  и авторизуйтесь</p>
+    <p class="registrationPopup__about text_16_26 mt_40">При входе в бот введите код:</p>
+    <div class="registrationPopup__code mt_10">1337</div>
+    <button class="button button_big registrationPopup__plug mt_10">подключить</button>
+  </div>
+  <div class="registrationPopup" id="notData" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">данные не заполнены</h2>
+    <p class="registrationPopup__about text_16_26 mt_30">Укажите ник и ID для того чтобы записаться на игру</p>
+    <button class="button button_big registrationPopup__plug mt_50">Открыть профиль</button>
+  </div>
+  <!-- /Popups -->
+
+	<!-- Footer -->
+  <footer class="footer">
+    <img src="img/Objects2.svg" alt="" class="svg footer__icons">
+    <div class="wrapperBig footer__wrapper">  
+      <div class="footer__contents">
+        <div class="footer__column footer__column_title">
+          <span class="text_18">KILLTOURN</span>
+          <span class="footer__about text_14"> Турнирная платформа для <span class="orange"> PUBG MOBILE </span></span>
+          <span class="footer__about2 text_14">Наша цель — что-бы игроки смогли зарабатывать на любимой игре.</span>
+        </div>
+        <div class="footer__column footer__column_pay">
+          <span class="text_18">Способы оплаты</span>
+          <ul class="footer__column_payList null">
+            <li class="footer__column_payItem">
+              <img src="img/visa.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/paypal.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/applePay.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/qiwi.svg" alt="" class="svg footer__column_payImg">
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_logos">
+          <a href="#" class="footer__column_logosLink">
+            <img src="img/red-bull.png" alt="" class="footer__column_logosImg">
+          </a>
+          <a href="#" class="footer__column_logosLink">
+            <img src="img/Hyperx-logo.png" alt="" class="footer__column_logosImg">
+          </a>
+        </div>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__sohials">
+          <span class="text_14 footer__sohialsText">Designed by <a href="#" class="orange">RichiPogChamp</a> </span>
+          <ul class="footer__sohialsList null">
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/twitch.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/teleg.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/disc.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/vk.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/youTube.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/twitter.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/insta.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__reklams text_14">
+          <span class="orange">LEQUESHOP.COM</span>
+          Аренда онлайн магазина
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <!-- /jQuery -->
+
+  <!-- Fancybox -->
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <!-- /Fancybox -->
+
+	<script src="js/main.js"></script>
+</body>
+</html>

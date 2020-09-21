@@ -1,0 +1,57 @@
+.leaderboard{
+  width: 100%;
+  max-width: 730px;
+}
+.leaderboard__item{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid $orange;
+  span{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    &.orange{
+      color: $orange;
+    }
+  }
+}
+.leaderboard__item_title{
+  display: flex;
+  padding: 0;
+  border: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  span{
+    font-family: 'TT Norms', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #F9F9F9;
+  }
+}
+
+
+.leaderboard__number{
+  width: 20px;
+}
+.leaderboard__name{
+  width: 140px;
+  word-wrap: break-word;
+}
+.leaderboard__kils{
+  width: 60px;
+}
+.leaderboard__matchs{
+  width: 60px;
+}
+.leaderboard__cd{
+  width: 40px;
+}
+.leaderboard__value{
+  width: 76px;
+}

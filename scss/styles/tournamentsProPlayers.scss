@@ -1,0 +1,32 @@
+.tournamentsProPlayers{
+  border-bottom: 2px solid $orange;
+  padding: 100px 0;
+  background: url('../img/tournamentsProPlayers.png') no-repeat center center;
+  background-size: cover;
+}
+.tournamentsProPlayers__title{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tournamentsProPlayers__about{
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+.tournamentsProPlayers__list{
+  @include flex;
+  margin-top: 100px;
+  margin-left: -86px;
+  justify-content: center;
+}
+.tournamentsProPlayers__item{
+  margin-left: 86px;
+  text-align: center;
+}
+.tournamentsProPlayers__text{
+  display: block;
+  margin-top: 22px;
+  font-weight: bold;
+}

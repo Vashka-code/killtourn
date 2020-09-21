@@ -1,0 +1,186 @@
+.tournaments{
+  padding: 100px 0;
+  border-bottom: 2px solid #FFCA19;
+  background: url('../img/money.png') no-repeat top center, #0F1923;
+  &__icon{
+    margin-right: 20px;
+  }
+  &__titleBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__links{
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.3s;
+    &:hover{
+      color: #e0e0e0;
+    }
+  }
+  &__places{
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+  &__prizes{
+    padding: 22px 40px;
+    margin: 22px 0 30px -40px;
+    width: calc(100% + 80px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 25, 35, 0.5);
+    border: 1px solid $orange;
+  }
+  &__prize{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__prizeIcon{
+    display: block;
+    margin-right: 10px;
+  }
+  &__prizeText{
+    display: block;
+    font-weight: bold;
+  }
+  &__left{
+    font-weight: 400;
+  }
+  &__infs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -40px;
+  }
+  &__inf{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  &__infIcon{
+    display: block;
+    margin-right: 10px;
+  }
+  &__infText{
+    display: block;
+  }
+}
+.tournaments__content{
+  width: 90%;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+.tournaments__title{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.tournaments__list{
+  @include flex;
+  margin-left: -56px;
+}
+.tournaments__item{
+  margin-top: 50px;
+  margin-left: 56px;
+  padding: 40px;
+  border: 2px solid #FFCA19;
+  border-radius: 10px;
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &_full{
+    width: 100%;
+    .tournaments__item{
+      padding: 60px 50px;
+    }
+    .tournaments__item2{
+      margin-left: 50px;
+    }
+    .tournaments__list2{
+      margin-left: -50px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tournaments__button{
+      margin-top: 20px;
+    }
+    .tournaments__link{
+      &:hover{
+        .button{
+          background: transparent;
+          color: $orange;
+        }
+      }
+    }
+    .tournaments__link{
+      .tournaments__button{
+        width: 100%;
+        max-width: 340px;
+        &:hover{
+          background: $orange;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+.tournaments__img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+}
+.tournaments__itemContent{
+  position: relative;
+  z-index: 2;
+}
+.tournaments__titles{
+  font-family: 'DINNextW1G', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tournaments__type{
+  font-weight: 400;
+}
+.tournaments__value{
+  font-weight: bold;
+  display: flex;
+  margin-top: 5px;
+}
+.tournaments__item2{
+  margin-top: 20px;
+}
+.tournaments__button{
+  margin-top: 30px;
+  width: 100%;
+}
+.tournaments__link{
+  &:hover{
+    .button{
+      background: $orange;
+      color: $black;
+    }
+  }
+}

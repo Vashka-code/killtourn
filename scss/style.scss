@@ -1,0 +1,33 @@
+@import 'var/mixins';
+@import 'var/variables';
+
+// font
+@import 'styles/fonts';
+
+// styles
+@import 'styles/common';
+@import 'styles/button';
+@import 'styles/logo';
+@import 'styles/topPlayer';
+@import 'styles/leaderboard';
+@import 'styles/rulePopup';
+@import 'styles/registrationPopup';
+@import 'styles/input';
+@import 'styles/inputBlock';
+@import 'styles/checkBlock';
+@import 'styles/menuBtn';
+
+// blocks
+@import 'styles/header';
+@import 'styles/pubgMoney';
+@import 'styles/tournaments';
+@import 'styles/tournamentsProPlayers';
+@import 'styles/videoInstructions';
+@import 'styles/topTablet';
+@import 'styles/streams';
+@import 'styles/footer';
+@import 'styles/error';
+@import 'styles/myProfile';
+
+// media
+@import 'styles/media';

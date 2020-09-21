@@ -1,0 +1,18 @@
+// flex
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

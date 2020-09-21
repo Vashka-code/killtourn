@@ -1,0 +1,133 @@
+.topPlayer{
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.topPlayer__list{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -120px;
+}
+.topPlayer__item{
+  position: relative;
+  margin-left: 120px;
+  &:first-child{
+    width: 100%;
+  }
+}
+.topPlayer__circle{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.topPlayer__circleIcon{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.topPlayer__number{
+  width: 40px;
+  height: 40px;
+  background: $orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Bebas Neue', cursive;
+}
+.topPlayer__photo{
+  max-width: 102px;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  border: 6px solid $orange;
+}
+.topPlayer__infs{
+  margin: -30px auto 0;
+  width: 100px;
+  text-align: center;
+}
+.topPlayer__name{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $orange;
+}
+.topPlayer__type, .topPlayer__value{
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $orange;
+}
+.topPlayer__value{
+  display: block;
+}
+.topPlayer__type{
+  display: block;
+  margin-top: 5px;
+}
+
+.topPlayer__item_yellow{
+  .topPlayer__circleIcon{
+    path{
+      fill: $orange;
+    }
+  }
+}
+.topPlayer__item_grey{
+  .topPlayer__circleIcon{
+    path{
+      fill: #C4C4C4;
+    }
+  }
+  .topPlayer__photo{
+    border: 6px solid #C4C4C4;
+  }
+  .topPlayer__number{
+    background: #C4C4C4;
+  }
+  .topPlayer__name, .topPlayer__type, .topPlayer__value{
+    color: #C4C4C4;;
+  }
+}
+.topPlayer__item_orange{
+  .topPlayer__circleIcon{
+    path{
+      fill: #CD7F32;
+    }
+  }
+  .topPlayer__photo{
+    border: 6px solid #CD7F32;
+  }
+  .topPlayer__number{
+    background: #CD7F32;
+  }
+  .topPlayer__name, .topPlayer__type, .topPlayer__value{
+    color: #CD7F32;
+  }
+}

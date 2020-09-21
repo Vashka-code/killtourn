@@ -1,0 +1,22 @@
+.inputBlock{
+  width: 100%;
+  max-width: 360px;
+  &__bottom{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #C4C4C4;
+    display: block;
+    text-align: right;
+  }
+  &__upData{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_middle{
+    max-width: 300px;
+  }
+}

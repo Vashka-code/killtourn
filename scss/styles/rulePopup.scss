@@ -1,0 +1,31 @@
+.rulePopup{
+  padding: 42px 130px;
+  background: #121C26;
+  border: 2px solid #FFCA19;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  display: none;
+}
+.rulePopup__title{
+  text-align: center;
+}
+.rulePopup__about{
+  display: block;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.rulePopup__title2{
+  margin-top: 50px;
+  text-align: center;
+}
+.rulePopup__list{
+  margin-top: 20px;
+}
+.rulePopup__btn{
+  margin: 50px auto 0;
+  display: block;
+}

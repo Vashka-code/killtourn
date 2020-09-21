@@ -1,0 +1,43 @@
+.menuBtn {
+	display: none;
+	width: 30px;
+	height: 24px;
+	position: relative;
+  cursor: pointer;
+}
+.menuBtn span,
+.menuBtn span::before,
+.menuBtn span::after {
+	position: absolute;
+	display: block;
+	top: 50%;
+  height: 2px;
+	background-color: #fff;
+}
+.menuBtn span{
+  width: 100%;
+}
+.menuBtn span::before,
+.menuBtn span::after {
+	content: '';
+	transition: 0.2s;
+}
+.menuBtn span::before {
+  width: 100%;
+	transform: translateY(-9px);
+}
+.menuBtn span::after {
+  width: 100%;
+	transform: translateY(7px);
+}
+.menuBtn.active span{
+	height: 0;
+}
+.menuBtn.active span:before {
+  transform: rotate(-45deg);
+  width: 100%;
+}
+.menuBtn.active span:after {
+  transform: rotate(45deg);
+  width: 100%;
+}

@@ -1,0 +1,452 @@
+@media (max-width: $screenPCBig){
+  .tournaments__list {
+    justify-content: center;
+  }  
+  .tournaments{
+    background: #0f1923;
+  }
+  .videoInstructions__icons {
+    display: none;
+  }
+  .header__item{
+    margin-left: 40px;
+  }
+  .header__list {
+    margin-left: -40px;
+    justify-content: center;
+  }
+  .leaderboard{
+    margin-top: 30px;
+    max-width: 100%;
+  }
+  .topPlayer{
+    margin: 0 auto;
+  }
+  .footer__column_pay{
+    margin: 0 auto;
+  }
+  .footer__reklams {
+    margin: 0 auto;
+  }
+}
+@media (max-width: $screenPC){
+  .logo_mob{
+    display: block;
+  }
+  .menuBtn{
+    display: block;
+  }
+  .header__nav{
+    position: absolute;
+    top: 114px;
+    padding: 10px 20px;
+    background: $black; 
+    z-index: 5;
+    width: 50%;
+    right: 0;
+    transition: 0.3s;
+    opacity: 0;
+    transform-origin: right center;
+    transform: scaleX(0) translateX(10%);
+    &.active{
+      opacity: 1;
+      transform: scaleX(1) translateX(0);
+    }
+  }
+  .header__item_logo{
+    display: none;
+  }
+  .header__menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header__list{
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+  .header__item{
+    margin-left: 0;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $orange;
+    &_flex{
+      justify-content: center;
+      text-align: left;
+    }
+  }
+  .header__itemContent {
+    margin-left: 14px;
+  }
+  .header__link{
+    font-size: 16px;
+  }
+  .h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .pubgMoney__title{
+    width: 100%;
+    margin: 40px 0;
+  }
+  .pubgMoney__money{
+    display: none;
+  }
+  .pubgMoney__item{
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .pubgMoney__list{
+    margin-left: -20px;
+    margin-top: 40px;
+  }
+  .tournamentsProPlayers__list{
+    margin-top: 20px;
+  }
+  .tournamentsProPlayers__item{
+    margin-top: 40px;
+  }
+  .streams{
+    background: #0f1923;
+  }
+  .footer__contents{
+    justify-content: space-around;
+    &:last-child{
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+  }
+  .footer__column_logos{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .footer__reklams {
+    margin: 0;
+  }
+  .rulePopup{
+    padding: 30px 60px;
+  }
+  .error{
+    padding: 120px 0;
+  }
+  .error__title{
+    font-size: 200px;
+  }
+  .error__btn{
+    margin-top: 40px;
+  }
+  .header__link {
+    justify-content: center;
+  }
+  .header__icon{
+    margin-right: 8px;
+  }
+  .logo__icon{
+    width: 70px;
+    height: auto;
+  }
+  .myProfile {
+    &__newInformation{
+      justify-content: space-around;
+    }
+    &__inputs{
+      margin-top: 0;
+    }
+    &__title{
+      text-align: center;
+      &_2{
+        text-align: center;
+      }
+    }
+    &__balance{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__btn{
+      margin-top: 15px;
+    }
+    &__addInputs{
+      margin-top: 20px;
+      .inputBlock{
+        margin-top: 15px;
+      }
+    }
+  } 
+}
+@media (max-width: 760px){
+  .header__nav {
+    width: 100%;
+  }
+  .h1 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .pubgMoney__btns{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pubgMoney__btn {
+    margin-top: 15px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  .videoInstructions__item{
+    width: 100%;
+    max-width: 460px;
+    margin-top: 25px;
+  }
+  .videoInstructions__itemContent{
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topPlayer__item {
+    margin-top: 30px;
+  }
+  .topPlayer__list{
+    margin-top: 0;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+  .footer__icons {
+    display: none;
+  }
+  .footer__column {
+    width: 100%;
+    text-align:  center;
+    margin-top: 20px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  .footer__column_payList {
+    justify-content: center;
+  }
+  .tournaments__item{
+    padding: 38px;
+  }
+  .topTablet{
+    padding: 60px 0;
+  }
+  .leaderboard__list {
+    min-width: 450px;
+  }
+  .leaderboard__tablet{
+    overflow: auto;
+    &::-webkit-scrollbar {
+      height: 6px; 
+    }
+    &::-webkit-scrollbar-track {
+      background: #eee; 
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #b9b9b9; 
+    }
+  }
+  .streams{
+    padding: 60px 0;
+  }
+  .streams__about{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .footer__sohials{
+    width: 100%;
+    text-align: center;
+  }
+  .footer__sohialsList {
+    justify-content: center;
+  }
+  .footer__reklams {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .header{
+    padding: 20px 0;
+  }
+  .header__nav{
+    top: 108px;
+  }
+  .rulePopup{
+    padding: 30px 20px;
+  }
+  .text_16_22{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .rulePopup__title2{
+    margin-top: 30px;
+  }
+  .error{
+    padding: 80px 0;
+  }
+  .error__title{
+    font-size: 160px;
+  }
+  .error__btn{
+    margin-top: 30px;
+  }
+  .streams__play{
+    width: 50px;
+    height: 50px;
+  }
+  .streams__playIcon {
+    width: 22px;
+    height: auto;
+  }
+  .registrationPopup{
+    padding: 30px 40px;
+  }
+  .myProfile {
+    padding: 60px 0 140px;
+    &__title_2{
+      margin-top: 50px;
+    }
+    &__inputBlock{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } 
+  .tournaments{
+    &__titles{
+      font-size: 32px;
+      line-height: 36px
+    }
+    &__icon{
+      margin-right: 5px;
+    }
+    &__links{
+      display: block;
+      margin-top: 8px;
+    }
+    &__prizes{
+      justify-content: center;
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+    &__prize{
+      margin-top: 12px;padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+@media (max-width: 420px){
+  .pubgMoney{
+    padding: 50px 0;
+  }
+  .h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .pubgMoney__list{
+    margin-top: 0;
+  }
+  .tournaments{
+    padding: 70px 0;
+  }
+  .tournaments__item{
+    padding: 18px;
+    margin-top: 30px;
+  }
+  .tournaments__titles{
+    font-size: 28px;
+    line-height: normal;
+  }
+  .tournaments__item2{
+    margin-top: 15px;
+  }
+  .tournaments__button{
+    margin-top: 22px;
+  }
+  .text_18{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .text_36 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .text_16_bold{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .tournamentsProPlayers, .videoInstructions{
+    padding: 60px 0;
+  }
+  .text_24{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .text_22{
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .text_16_26{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text_16_grey{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .rulePopup__btn{
+    width: 100%;
+  }
+  .error{
+    padding: 60px 0;
+  }
+  .error__title{
+    font-size: 120px;
+  }
+  .error__btn{
+    margin-top: 20px;
+  }
+  .registrationPopup{
+    padding: 20px;
+    &__form{
+      margin-top: 30px;
+    }
+    &__btn{
+      margin-top: 20px;
+    }
+  }
+  .mt{
+    &_40{
+      margin-top: 20px;
+    }
+    &_50{
+      margin-top: 25px;
+    }
+  }
+  .checkBlock{
+    &__text{
+      width: 85%;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  .button{
+    font-size: 14px;line-height: 16px;
+  }
+  .tournaments{
+    &__titles{
+      font-size: 28px;
+      line-height: 32px
+    }
+    &__places{
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

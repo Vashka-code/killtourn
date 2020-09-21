@@ -1,0 +1,12 @@
+.topTablet{
+  padding: 100px 0;
+  background: url('../img/topTablet.png') no-repeat center center;
+  background-size: cover;
+  border-bottom: 2px solid $orange;
+}
+.topTablet__content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}

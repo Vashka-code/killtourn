@@ -1,0 +1,184 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+
+.null{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// titles
+.h1{
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 5rem #f2a900);
+}
+.h2{
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 5rem #f2a900);
+}
+
+// texts
+.text_36{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.text_24{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.text_22{
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.text_18{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.text_16{
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  &_bold{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+  &_500{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+  &_26{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+  &_grey{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #C4C4C4;
+  }
+}
+.text_16_22{
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.text_14{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F9F9F9;
+  font-family: 'TT Norms', sans-serif;
+  &_grey{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #C4C4C4;
+  }
+}
+
+
+// wrappers
+
+.wrapper{
+  width: 90%;
+  max-width: $wrapperWidth;
+  margin: 0 auto;
+}
+.wrapperBig{
+  width: 90%;
+  max-width: $wrapperWidthBig;
+  margin: 0 auto;
+}
+
+// colors
+.orange{
+  color: $orange;
+}
+
+
+
+// font-weidth
+.medium{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+
+
+
+.mt{
+  &_5{
+    margin-top: 5px;
+  }
+  &_10{
+    margin-top: 10px;
+  }
+  &_30{
+    margin-top: 30px;
+  }
+  &_40{
+    margin-top: 40px;
+  }
+  &_50{
+    margin-top: 50px;
+  }
+}
+.ml{
+  &_20{
+    margin-left: 20px;
+  }
+}
+
+
+.fancybox-button svg path{
+  fill: #FFCA19;
+}
+
+.block{
+  display: block;
+}

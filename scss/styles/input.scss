@@ -1,0 +1,25 @@
+.input{
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFf;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 360px;
+  padding: 12px 14px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  outline: none;
+  &.true{
+    border: 1px solid #21A453;
+    background: url('../img/check.svg') no-repeat 95% 50%, 
+    rgba(255, 255, 255, 0.2);
+  }
+  &_bigText{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+}

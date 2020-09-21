@@ -1,0 +1,56 @@
+.streams{
+  padding: 100px 0 180px;
+  text-align: center;
+  position: relative;
+  background: url('../img/money3.png') no-repeat top center, #0F1923;
+  border-bottom: 2px solid $orange;
+}
+.streams__about{
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D4D4D4;
+  display: block;
+  margin-top: 20px;
+}
+.streams__list{
+  @include flex;
+  margin-left: -60px;
+  justify-content: center;
+}
+.streams__item{
+  margin-top: 50px;
+  width: 700px;
+  position: relative;
+  margin-left: 60px;
+  &:hover{
+    .streams__play{
+      background: $orangeHover;
+    }
+  }
+}
+.streams__img{
+  width: 100%;
+  height: auto;
+}
+.streams__play{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+.streams__playIcon {
+  display: block;
+  margin-right: -6px;
+}

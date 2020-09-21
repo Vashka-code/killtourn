@@ -1,0 +1,135 @@
+.registrationPopup{
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid $orange;
+  box-shadow: 0px 0px 20px rgba(255, 208, 8, 0.2);
+  border-radius: 10px;
+  max-width: 900px;
+  width: 95%;
+  padding: 50px 70px;
+  display: none;
+  &_middle{
+    max-width: 600px;
+  }
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__form{
+    margin: 60px auto 0;
+    width: 100%;
+    max-width: 360px;
+  }
+  &__btn{
+    width: 100%;
+    margin: 40px auto 0;
+  }
+  &__other{
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__question{
+    display: block;
+  }
+  &__text{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 552px;
+    width: 100%;
+    text-align: center;
+    a{
+      text-decoration: underline;
+    }
+  }
+  &__about{
+    text-align: center;
+  }
+  &__code{
+    width: 136px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: $orange;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__plug{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  &__list{
+    margin-top: 30px;
+    width: 100%;
+  }
+  &__item{
+    margin-top: 20px;
+    width: 100%;
+  }
+  &__sochial{
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    transition: 0.3s;
+    &_blue{
+      background: #4B77A4;
+      &:hover{
+        background: #436a92;
+      }
+    }
+    &_purple{
+      background: #738BD5;
+      &:hover{
+        background: #677ec0;
+      }
+    }
+    &_white{
+      background: #F2F2F2;
+      .registrationPopup__sochialText{
+        color: #000;
+      }
+      &:hover{
+        background: #dfdede;
+      }
+    }
+    &_lightBlue{
+      background: #1E79EB;
+      &:hover{
+        background: #1c71d8;
+      }
+    }
+    &_black{
+      background: #2D3037;
+      &:hover{
+        background: #212429;
+      }
+    }
+  }
+  &__iconBlock{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__sochialText{
+    display: block;
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <title>Template</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- /Fonts -->
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+  <!-- /Fancybox -->
+
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- /Normalize -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- /Styles -->
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+    <div class="header__menu wrapper">
+      <a href="#" class="logo logo_mob">
+        <img src="./img/logo.svg" alt="" class="logo__icon">
+      </a>
+      <div class="menuBtn">
+        <span></span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list null">
+          <li class="header__item header__item_ml">
+            <a href="#tournaments" class="anchor header__link text_14"> 
+              <img src="img/bullseye-solid.svg" alt="" class="svg header__icon">
+              турниры
+            </a>
+          </li>
+          <li class="header__item header__item_ml">
+            <a href="#rulePopup" class="fancybox header__link text_14">
+              <img src="img/book-solid.svg" alt="" class="svg header__icon">
+              правила
+            </a>
+          </li>
+          <li class="header__item header__item_ml">
+            <a href="#topTablet" class="anchor header__link text_14">
+              <img src="img/trophy-solid.svg" alt="" class="svg header__icon">
+              лидерборд
+            </a>
+          </li>
+          <li class="header__item header__item_ml">
+            <a href="#streams" class="anchor header__link text_14">
+              <img src="img/video-solid.svg" alt="" class="svg header__icon">
+              стримы
+            </a>
+          </li>
+          <li class="header__item header__item_ml header__item_logo">
+            <a href="#" class="logo">
+              <img src="img/logo.svg" alt="" class="logo__img">
+            </a>
+          </li>
+          <li class="header__item header__item_ml">
+            <a href="#telegramBot" class="fancybox header__link text_14">
+              <img src="img/telegram-plane-brands.svg" alt="" class="svg header__icon">
+              телеграм бот
+            </a>
+          </li>
+          <li class="header__item header__item_ml header__item_flex">
+            <img src="./img/photo.jpg" alt="" class="header__photo">
+            <div class="header__itemContent">
+              <span class="text_14 header__itemBal">Баланс</span>
+              <div class="header__itemNumber text_16_bold mt_5">
+                100.00 ₽
+                <button class="header__add">
+                  <img src="./img/plus-circle-solid.svg" alt="" class="svg header__addIcon">
+                </button>
+              </div> 
+            </div>
+          </li>
+          <li class="header__item header__item_ml">
+            <a href="#login" class="fancybox header__link text_14 active">
+              <img src="img/profile.svg" alt="" class="svg header__icon">
+              Мой профиль
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+	<!-- /Header -->
+
+
+	<!-- Main -->
+	<main class="main">
+    <section class="myProfile" style="background-image: url('./img/myPr.png');">
+      <div class="myProfile__wrapper">
+        <h2 class="null text_36 myProfile__title">Основная информация</h2>
+        <div class="myProfile__newInformation mt_50">
+          <div class="myProfile__addPhoto">
+            <img src="" alt="" class="myProfile__photo addImage">
+            <input type="file" class="myProfile__download">
+            <img src="./img/camera-solid.svg" alt="" class="myProfile__cameraIcon">
+          </div>
+          <div class="myProfile__inputs">
+            <div class="inputBlock myProfile__inputBlock">
+              <span class="inputBlock__type text_16_500">Никнейм в PUBG</span>
+              <div class="myProfile__inputRel mt_10">
+                <input type="text" class="input " placeholder="Пример: RichiPogChamp#1337">
+                <img src="./img/addIcon.svg" alt="" class="myProfile__inputIcon">
+              </div>
+            </div>
+            <div class="inputBlock myProfile__inputBlock">
+              <div class="inputBlock__upData">
+                <span class="inputBlock__type text_16_500">Реферальная ссылка</span>
+                <span class="text_14_grey">Приглашено: 10</span>
+              </div>
+              <div class="myProfile__inputRel mt_10">
+                <input type="text" class="input" value="kill-tourn.com/invite1337">
+                <button class="myProfile__inputIcon myProfile__inputIcon_btn">
+                  <img src="./img/copy-solid.svg" alt="" class="">
+                </button>
+              </div>
+            </div>
+            <div class="inputBlock myProfile__inputBlock">
+              <span class="inputBlock__type text_16_500">Email</span>
+              <div class="myProfile__inputRel mt_10">
+                <input type="text" class="input" value="RichiPogChamp@gmail.com">
+                <img src="./img/addIcon.svg" alt="" class="myProfile__inputIcon">
+              </div>
+            </div>
+            <div class="inputBlock myProfile__inputBlock">
+              <span class="inputBlock__type text_16_bold">VK</span>
+              <div class="myProfile__inputRel mt_10">
+                <input type="text" class="input">
+                <img src="./img/addIcon.svg" alt="" class="myProfile__inputIcon">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="myProfile__balance mt_30">
+          <div class="inputBlock mt_40">
+            <span class="inputBlock__type text_16_bold">Баланс</span>
+            <input type="text" class="input input_bigText mt_10" value="1000.00 ₽" readonly>
+          </div>
+          <button class="button myProfile__btn">Пополнить</button>
+          <button class="button myProfile__btn">Вывести</button>
+        </div>
+        <h2 class="text_36 null myProfile__title_2">Турнирная статистика</h2>
+        <div class="myProfile__addInputs mt_50">
+          <div class="inputBlock inputBlock_middle">
+            <span class="inputBlock__type text_16_bold">Ранг</span>
+            <input type="text" class="input mt_10" value="Новичек" readonly>
+          </div>
+          <div class="inputBlock inputBlock_middle">
+            <span class="inputBlock__type text_16_bold">Количество турниров</span>
+            <input type="text" class="input mt_10" value="10" readonly>
+          </div>
+          <div class="inputBlock inputBlock_middle">
+            <span class="inputBlock__type text_16_bold">Киллов</span>
+            <input type="text" class="input mt_10" value="100" readonly>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+	<!-- /Main -->
+
+  <!-- Popups -->
+  <div class="rulePopup" id="rulePopup">
+    <h2 class="h2 null rulePopup__title">правила</h2>
+    <span class="rulePopup__about">Участвовать могут только зарегистрированные пользователи (указывать исключительно верные данные, чтобы мы могли добавить вас в игровое лобби).</span>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">1.</span> Выбрать турнир. Рядом с турниром будет указана цена за 1 килл. Цена зависит от вашего ранга и рассчитывается из суммы участия в турнире. Например, ваш ранг Legend, согласно данному рангу цена за 1 килл равна 75% от суммы участия в турнире. То есть, если сумма участия равна 100 рублей, то вы получаете 75 рублей с одного килла и уже с двух киллов окупаете стоимость участия на 50 рублей. С каждым новым киллом ваш заработок растет;
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">2.</span> Оплатить участие любым из доступных способов пополнения;
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">3. </span> Выбрать, вы будете участвовать в одиночку или со своими друзьями (смотрите на режим турнира, там будет указано возможное количество людей в одной команде);
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">4. </span> За 60 и за 30 минут до начала турнира в Телеграм бот вам придет уведомление с напоминанием о турнире. За 10 минут до начала в Телеграм бот вам придут логин и пароль от лобби, а также номер команды, в которую вам необходимо будет вступить, аналогичные данные для входа появятся в окне самого турнира на сайте. Входить в лобби настоятельно рекомендуем сразу, как только вы получили соответствующие данные, но ни в коем случае не за 1-2 минуты до начала турнира.
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">5. </span> Если в вашей ячейке находится посторонний игрок, сообщите нам об этом в поддержку
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">6. </span> После окончания турнира в течение 15 минут в Телеграм бот вам придут результаты турнира, и в случае совершения киллов на ваш баланс будут начислены заработанные денежные средства.
+    </p>
+    <p class="rulePopup__text text_16_22">
+      <span class="bold">7. </span> Настоятельно рекомендуем ознакомиться с нашим FAQ в котором вы сможете найти ответы на самые частые вопросы.
+    </p>
+    <h2 class="h2 null rulePopup__title2">Запрещено</h2>
+    <ul class="rulePopup__list null">
+      <li class="rulePopup__item text_16_22">- Участие в турнирах с эмуляторов;</li>
+      <li class="rulePopup__item text_16_22">- Вставать не в свою ячейку в лобби (режимы Дуо и Сквад);</li>
+      <li class="rulePopup__item text_16_22">- Отправлять логин и пароль для входа в лобби третьим лицам;</li>
+      <li class="rulePopup__item text_16_22">- Участие в турнире с аккаунта, на котором уровень ниже 30;</li>
+      <li class="rulePopup__item text_16_22">- Использовать чит-коды;</li>
+      <li class="rulePopup__item text_16_22">- Тиминг в турнирах (игроки из разных команд играют вместе или умышленно не сражаются друг с другом, в случае сигнала от одного из игроков)</li>
+      <li class="rulePopup__item text_16_22">- Продавать и покупать игровые аккаунты, которые участвуют в турнирах KILLTOURN</li>
+    </ul>
+    <span class="rulePopup__about">Каждое из нарушений влечет за собой удаление из Турнира! В некоторых случаях возможен бан аккаунта без возврата денежных средств</span>
+    <button class="button rulePopup__btn">принимаю</button>
+  </div>
+  <div class="registrationPopup registrationPopup_middle" id="login" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">Добро пожаловать</h2>
+    <p class="registrationPopup__text text_16_grey null mt_30">
+      Нажимая кнопку, вы соглашаетесь с 
+      <a href="#" class="text_16_grey"> Условиями использования </a> и 
+      <a href="#" class="text_16_grey"> Политикой конфиденциальности </a>
+      и подтверждаете, что вам есть 18 лет.
+    </p>
+    <ul class="registrationPopup__list null">
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_blue">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/vk2.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через VK</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_purple">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/discord.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Discord</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_white">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/google.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Google</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_lightBlue">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/facebook.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти через Facebook</span>
+        </button>
+      </li>
+      <li class="registrationPopup__item">
+        <button class="registrationPopup__sochial registrationPopup__sochial_black">
+          <span class="registrationPopup__iconBlock">
+            <img src="./img/apple.svg" alt="" class="registrationPopup__icon">
+          </span>
+          <span class="text_16_500 registrationPopup__sochialText">Войти с Apple</span>
+        </button>
+      </li>
+    </ul>
+    
+  </div>
+  <div class="registrationPopup registrationPopup_middle" id="newAcc" style="background-image: url('./img/signPopup.png');">
+    <p class="registrationPopup__text text_22 null">Для участия в турнирах войдите в свой аккаунт или создайте новый </p>
+    <button class="button button_white registrationPopup__plug button_big mt_50">Я новый игрок</button>
+    <button class="button button_white registrationPopup__plug button_big mt_30">У меня уже есть аккаунт</button>
+    
+  </div>
+  <div class="registrationPopup" id="telegramBot" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">телеграм бот</h2>
+    <p class="registrationPopup__text text_16_26 null mt_50">Для того, что-бы использовать сервис, вовремя получать все уведомления о начале турниров, самые жаркие новости и данные для входа в игровую лобби, перейдите по <a href="#" class="orange"> ссылке </a>  и авторизуйтесь</p>
+    <p class="registrationPopup__about text_16_26 mt_40">При входе в бот введите код:</p>
+    <div class="registrationPopup__code mt_10">1337</div>
+    <button class="button button_big registrationPopup__plug mt_10">подключить</button>
+  </div>
+  <div class="registrationPopup" id="notData" style="background-image: url('./img/signPopup.png');">
+    <h2 class="text_36 null registrationPopup__title">данные не заполнены</h2>
+    <p class="registrationPopup__about text_16_26 mt_30">Укажите ник и ID для того чтобы записаться на игру</p>
+    <button class="button button_big registrationPopup__plug mt_50">Открыть профиль</button>
+  </div>
+  <!-- /Popups -->
+
+	<!-- Footer -->
+  <footer class="footer">
+    <img src="img/Objects2.svg" alt="" class="svg footer__icons">
+    <div class="wrapperBig footer__wrapper">  
+      <div class="footer__contents">
+        <div class="footer__column footer__column_title">
+          <span class="text_18">KILLTOURN</span>
+          <span class="footer__about text_14"> Турнирная платформа для <span class="orange"> PUBG MOBILE </span></span>
+          <span class="footer__about2 text_14">Наша цель — что-бы игроки смогли зарабатывать на любимой игре.</span>
+        </div>
+        <div class="footer__column footer__column_pay">
+          <span class="text_18">Способы оплаты</span>
+          <ul class="footer__column_payList null">
+            <li class="footer__column_payItem">
+              <img src="img/visa.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/paypal.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/applePay.svg" alt="" class="svg footer__column_payImg">
+            </li>
+            <li class="footer__column_payItem">
+              <img src="img/qiwi.svg" alt="" class="svg footer__column_payImg">
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_logos">
+          <a href="#" class="footer__column_logosLink">
+            <img src="img/red-bull.png" alt="" class="footer__column_logosImg">
+          </a>
+          <a href="#" class="footer__column_logosLink">
+            <img src="img/Hyperx-logo.png" alt="" class="footer__column_logosImg">
+          </a>
+        </div>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__sohials">
+          <span class="text_14 footer__sohialsText">Designed by <a href="#" class="orange">RichiPogChamp</a> </span>
+          <ul class="footer__sohialsList null">
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/twitch.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/teleg.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/disc.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/vk.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/youTube.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/twitter.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+            <li class="footer__sohialsItem">
+              <a href="#" class="footer__sohialsLink">
+                <img src="img/insta.svg" alt="" class="svg footer__sohialsIcon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__reklams text_14">
+          <span class="orange">LEQUESHOP.COM</span>
+          Аренда онлайн магазина
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- /Footer -->
+  
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <!-- /jQuery -->
+
+   <!-- Fancybox -->
+   <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+   <!-- /Fancybox -->
+
+	<script src="js/main.js"></script>
+</body>
+</html>
