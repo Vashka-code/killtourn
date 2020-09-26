@@ -244,6 +244,9 @@ li {
             transform: translateX(25em) skewX(-45deg); } }
 .logo {
   text-align: center; }
+  .logo__img {
+    width: 100px;
+    height: auto; }
 
 .logo__title {
   font-family: 'DINNextW1G', sans-serif;
